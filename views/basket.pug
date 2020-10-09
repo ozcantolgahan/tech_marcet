@@ -1,0 +1,19 @@
+extends layouts/site_main_layout.pug
+block content
+    .container
+        h5.float-right.mt-3 Total Price: #{totalPrice}$
+        br
+        br
+        br
+       
+        each product in products
+            .row.basket.p-4.mt-3
+                .col-10
+                    .row
+                        img(src=`/img/${product.imageUrl}` width="64px" height="64px" )
+                        h5.mt-3.ml-4=product.name
+                        p.mt-3.ml-4 #{product.price}
+                .col-2
+                    form(action="/removeInBasket" method="POST")
+                        input(type="hidden" name="product" value=product)
+                        input(type="submit" value="Sepetten Kaldır" ).btn.btn-danger

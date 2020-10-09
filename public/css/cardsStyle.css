@@ -1,0 +1,11 @@
+.card{
+    width: 25%;
+}
+.card img{
+    display: inline-block;
+    margin: auto;
+}
+.row.basket{
+    border: 3px solid whitesmoke;
+
+}

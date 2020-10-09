@@ -1,0 +1,13 @@
+.container.mt-3.d-flex.flex-wrap.text-center.justify-content-between
+        if !existProducts
+            each product in products
+                .card.m-2.p-2
+                    img(src=`/img/${product.imageUrl}` alt='' width='200' height='200' )
+                    .card-body.p-0
+                        h4.card-title.mt-2(style="height:50px") #{product.name}
+                        p.card-text #{product.price}$
+                        a.btn.btn-primary(href=`/product/${product.id}` style='margin-right: 5px; width:37%;') İncele
+                        input.btn.btn-danger.text-white.btn-animation(type="submit" style="width:60%;" value="Sepete Ekle" ) 
+                      
+        else
+            h3 Henüz ürün yok

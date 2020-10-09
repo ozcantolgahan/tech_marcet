@@ -1,0 +1,15 @@
+.carousel-inner img{
+    height: 450px;
+
+}
+.carousel-caption{
+    top: 5%;
+}
+
+    .carousel-caption a{
+    width: 20%;
+    margin-right: 10px;
+  
+
+    }
+

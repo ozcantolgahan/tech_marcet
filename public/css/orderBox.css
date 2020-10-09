@@ -1,0 +1,10 @@
+.order-box{
+    width:64px;
+     height:64px; 
+     border-radius:50%;
+      background-image: url("/img/basket.png");
+       position:fixed;
+        bottom:5%;
+        right: 1%;
+        
+}

@@ -1,0 +1,7 @@
+@import url("/css/carouselStyle.css");
+@import url("/css/cardsStyle.css");
+@import url("/css/orderBox.css");
+
+footer{
+    background-color: #333333;
+}

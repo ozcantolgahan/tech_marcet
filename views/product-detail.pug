@@ -1,0 +1,14 @@
+extends layouts/site_main_layout.pug
+
+block content
+    div.container.mt-5
+        .row
+            .col-4
+                img(src=`/img/${product.imageUrl}` width="100%" height="300px")
+            .col.mt-5
+                h2 #{product.name}
+                h4.mt-4 #{product.price}$
+                p.mt-3 #{product.description}
+                form(action="/addToBasket" method="POST" style="display:inline")
+                    input(type="hidden" value=product name="product")
+                    input.btn.btn-danger.text-white(type="submit" style="width:60%;" value="Sepete Ekle" ) 
